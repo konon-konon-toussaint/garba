@@ -1,0 +1,362 @@
+/* entête de mon site */
+
+* {
+    margin: 0;
+    /*Fait disparaître tous les marges externe de notre site */
+    padding: 0;
+    /*Fait disparaître tous les marges internes de notre site*/
+    text-decoration: none;
+    /*Fait disparaître le soulignement de notre site*/
+    list-style-type: none;
+    /*fait disparaître les points*/
+    font-size: 18px;
+
+}
+
+header {
+    background-color: #333;
+    /*Mettre la couleur de fond*/
+    display: flex;
+    /*Permet d'aligner les éléments*/
+    justify-content: space-around;
+    /*Permet de mettre de l'espace entre les éléments*/
+    height: 80px;
+    /*La hauteur à notre header*/
+    align-items: center;
+    /* position: relative; */
+}
+
+header a.logo {
+    color: #fff;
+    font-size: 40px;
+}
+
+header a.logo span {
+    color: orange;
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+
+nav ul li a.active {
+    border-bottom: 1px solid orange;
+    padding-bottom: 30px;
+
+}
+
+nav ul li a:hover {
+    color: rgb(243, 148, 6);
+    border-bottom: 1px solid orange;
+    padding-bottom: 30px;
+    transition: 0, 55;
+}
+
+/* Menus de navigation responsive */
+nav label i {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+
+nav input {
+    display: none;
+}
+
+nav label {
+    display: none;
+}
+
+
+
+/* Bannière */
+div#bannière {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../image/bannière.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+div#bannière h5 {
+    color: orange;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 6;
+    margin-bottom: 20px;
+    word-spacing: 15;
+}
+
+div#bannière h1 {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10;
+    margin-bottom: 40px;
+    word-spacing: normal;
+}
+
+div#bannière a {
+    color: rgb(255, 253, 248);
+    border: 3px solid rgb(248, 239, 239);
+    background-color: rgb(14, 243, 7);
+    padding: 10px 30px;
+    letter-spacing: 5px;
+    border-radius: 50px;
+}
+
+div#bannière a:hover {
+
+    background-color: white;
+    color: #02f823;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+/* Mon menus */
+section.container {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+div#recette {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+div#recette h2 {
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+div#recette a {
+    color: orange;
+}
+
+/* Mes cartes */
+
+div#cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    row-gap: 40px;
+}
+
+div#cards div.card {
+    border: 0.5px solid gray;
+    width: 31%;
+}
+
+div.card img {
+    width: 100%;
+}
+
+div.card div.card-tittle {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+div.card-title h3 {
+    color: orangered;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div.card-body {
+    margin: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+div.card div.card-footer {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.card div.card-footer p.rate {
+    color: orange;
+}
+
+div.card-footer p.pat {
+    color: orange;
+
+}
+
+/* A propos */
+.apropos {
+    padding-top: 50px;
+}
+
+.apropos h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.apropos h3 {
+    color: #1a6692;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.apropos-container p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.apropos .apropos-container {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.apropos-container div {
+    width: 50%;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 400px;
+}
+
+.apropos-container ul {
+    margin-left: 19px;
+}
+
+.apropos-container ul li {
+    list-style-type: square;
+}
+
+.apropos-container ul li a {
+    color: #333;
+}
+
+.apropos-container ul li a:hover {
+    color: #e74343;
+}
+
+.apropos-container a.commander {
+    color: #ffffff;
+    background-color: #e74343;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.apropos-container a.commander:hover {
+    background-color: #000000;
+
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+footer hr {
+    width: 80%;
+    margin: auto;
+}
+
+.copy a {
+    color: red;
+}
+
+/* Adapter mon site au format mobile et tablette */
+/* Les ecrans  dont la largeur est inférieur ou égale à 800px */
+@media screen and (max-width:800px) {
+    nav input[type="checkbox"]:checked+ul.mobile-menu {
+        position: absolute;
+        display: flex;
+        top: 100%;
+
+    }
+
+    .mobile-menu {
+        display: none;
+
+    }
+
+    nav label {
+        display: block;
+    }
+
+    nav input[type="checkbox"]:checked+ul.mobile-menu {
+        position: absolute;
+        display: flex;
+        top: 100%;
+        width: 100%;
+        right: 0;
+        flex-direction: column;
+        background-color: rgb(150, 240, 6);
+
+    }
+
+    nav ul.mobile-menu li {
+        padding: 20px;
+    }
+
+    nav ul.mobile-menu li a:hover {
+        color: orange;
+    }
+
+    nav ul.mobile-menu li a {
+        border: none;
+    }
+
+    div#cards div.card {
+        width: 100%;
+    }
+
+    .apropos-container div{
+        width: 100%;
+    }
+
+    .apropos-container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    #recette{
+        flex-direction: column;
+    }
+    div#recette h2 {
+        width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+
+    }
+    div#recette a {
+        row-gap: 100px;
+        margin-top: 15px;
+    }
+    div#bannière h1 {
+        font-size: 20px;
+    }
+    div#bannière h5{
+        font-size: 20px;
+    }
+
+}

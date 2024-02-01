@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+header a.log {
+    color: aliceblue;
+    font-size: 30px;
+}
+
+header a.log span {
+    color: orange;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: orange;
+    border-bottom: 1px solid rgb(248, 136, 7);
+    padding-bottom: 30px;
+    transition: 0.5;
+}
+
+
+nav ul li a.constant {
+    border-bottom: 2px solid rgb(255, 123, 0);
+    padding-bottom: 30px;
+}
+
+div#bann {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../image/Bestgarba.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+div#bann h6 {
+    color: orange;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5;
+    margin-bottom: 15px;
+    word-spacing: 15;
+
+}
+
+div#bann h1 {
+    color: aliceblue;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10;
+    margin-bottom: 40px;
+    word-spacing: normal;
+}
+
+section.kt {
+    width: 80%;
+    margin: auto;
+    padding: 100px 0px;
+}
+
+.apropos {
+    padding-top: 50px;
+}
+
+.apropos h2 {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.apropos h3 {
+    color: #1a6692;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.apropos-container p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.apropos .apropos-container {
+    margin-top: 50px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.apropos-container div {
+    width: 50%;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 400px;
+}
+
+.apropos-container ul {
+    margin-left: 19px;
+}
+
+.apropos-container ul li {
+    list-style-type: square;
+}
+
+.apropos-container ul li a {
+    color: #333;
+}
+
+.apropos-container ul li a:hover {
+    color: #e74343;
+}
+
+.apropos-container a.commander {
+    color: #ffffff;
+    background-color: #e74343;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.apropos-container a.commander:hover {
+    background-color: #000000;
+
+}
+
+div.apropos-container div input {
+    padding: 10px;
+}
+
+.apropos-container div form div.li input {
+    background-color: green;
+}
+
+form p{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+div input{
+    width: 400px;
+
+}

@@ -1,0 +1,190 @@
+/* Entête de mon site */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Honk", system-ui;
+}
+
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+header a.logo {
+    color: #fff;
+    font-size: 40px;
+}
+
+header a.logo span {
+    color: orange;
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: orange;
+    border-bottom: 1px solid rgb(248, 136, 7);
+    padding-bottom: 30px;
+    transition: 0.5;
+}
+
+nav ul li a.constant {
+    border-bottom: 1px solid orangered;
+    padding-bottom: 30px;
+}
+
+/* bannierre */
+div#bannierre {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../image/Bestgarba.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+div#bannierre h4 {
+    color: orange;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5;
+    margin-bottom: 15px;
+    word-spacing: 15;
+}
+
+div#bannierre h1 {
+    color: whitesmoke;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 10;
+    margin-bottom: 40px;
+    word-spacing: normal;
+}
+
+/* Mon menus */
+section.container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+
+}
+
+div#recette {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+div#recette a {
+    color: orange;
+}
+
+/* Mes cartes */
+div#cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    row-gap: 40px;
+}
+
+div#cards div.card {
+    border: 1px solid rgb(12, 11, 11);
+    width: 31%;
+}
+
+div.card img {
+    width: 100%;
+}
+
+div.card div.card-tittle {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    /* color: orange; */
+}
+
+.card-tittle h3 {
+    color: orange;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+div.card-body {
+    margin: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+div.card div.card-footer {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.card div.card-footer p.rate {
+    color: orange;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+footer hr {
+    width: 80%;
+    margin: auto;
+}
+
+
+.copy a {
+    color: red;
+}
+
+
+div.carreau ul{
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    padding: 10px 5px;
+
+}
+
+div.carreau ul li{
+    border: 1px solid rgb(8, 7, 4);
+    padding: 10px 10px;
+}
+.carreau ul li.col{
+    background-color: orange;
+}
+
+div.carreau ul li:hover {
+    background-color: orange;
+}
+.carreau ul li a{
+    color: black;
+}
+
